@@ -1,0 +1,64 @@
+.Dashboard{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding:0;
+    z-index: 1;
+    background-color: var(--background-color1);
+}
+.Dashboard-incidentArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 1vw;
+    padding: 0;
+    z-index: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Dashboard-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid var(--text-color2);
+    width: 100%;
+    height: 7vh;
+}
+.Dashboard-title,.Dashboard-time,.Dashboard-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.Dashboard-title{
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.Dashboard-time{
+    font-size: 2vh;
+    font-weight: bold;
+    text-align: center;
+    color: grey;
+}
+.Dashboard-logo{
+    display:flex;
+    color: green;
+    font-size: 3vh;
+    font-weight: bold;
+}

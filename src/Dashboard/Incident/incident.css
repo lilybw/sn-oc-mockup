@@ -1,0 +1,127 @@
+.Incident {
+    --total-height: 40vh;
+    --header-height: .1;
+    --body-height: calc(1 - var(--header-height));
+    --body-upperRow-height: .33;
+    --body-lowerRow-height: calc(1 - var(--body-upperRow-height));
+    background-color: var(--background-color2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color1);
+    border: 1px solid var(--text-color2);
+    font-weight: normal;
+    justify-content: center;
+    border-radius: 1vh;
+    padding: .5vh;
+    margin-top: 0px;
+    margin-bottom: 1vh;
+    width: 97.3%;
+    z-index: 1;
+    transition: width 0.3s cubic-bezier(1, 0, 0, 1);
+}
+.Incident:hover[data-showbody='false'] {
+    background-color: var(--incident-highlight-color);
+    filter: drop-shadow(0px 0px .5vh white);
+}
+.Incident-whilestDragged {
+    position: fixed;
+    display: flex;
+    color: red;
+    width: 7vw;
+    z-index: 10;
+    transition: width 0.3s cubic-bezier(1, 0, 0, 1);
+}
+.Incident-header {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: .1fr .1fr 1fr 1fr .4fr .4fr 1fr 1.5fr;
+    grid-template-areas: "type number title state assignee caller group updated";
+    align-items: center;
+    text-align: center;
+    font-size: 1.8vh;
+    width: 100%;
+    height: calc(var(--total-height) * var(--header-height));
+}
+.Incident-Body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1vh;
+    height: calc(var(--total-height) * var(--body-height));
+    padding-bottom: 3vh;
+    transition: height 0.3s cubic-bezier(1, 0, 0, 1);
+    animation: show-body-animation .1s ease-out;
+}
+@keyframes show-body-animation {
+    0% {
+        height: 0vh;
+    }
+
+    100% {
+        height: calc(var(--total-height) * var(--body-height));
+    }
+}
+
+.column,.Incident-description {
+    overflow: auto;
+    font-size: 1.5vh;
+    color: var(--text-color2);
+    border: 1px solid var(--border-color);
+    height: inherit;
+    border-radius: 1vh;
+}
+.Incident-description {
+    display: flex;
+    padding: 1vh;
+    text-align: left;
+    width: 100%;
+}
+#column{
+    height: inherit;
+}
+.Incident-number, .Incident-type{
+    color: var(--text-highlight1);
+    font-weight: bold;
+}
+
+
+
+.Incident-UpperRow, .Incident-LowerRow{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1vh;
+    justify-content: space-between;
+    align-items: center;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.Incident-UpperRow{
+    columns: 2fr 1fr 1fr 1fr;
+    margin-bottom: 2vh;
+    height: calc(var(--total-height) * var(--body-height) * var(--body-upperRow-height));
+    width: 100%;
+}
+.Incident-LowerRow{
+    columns: 2fr 2fr .5fr;
+    justify-content: space-evenly;
+    height: calc(var(--total-height) * var(--body-height) * var(--body-lowerRow-height));
+    width: 100%;
+}
+.Incident-baseInfo, .Incident-baseInfoTitle{
+    color: var(--text-color2);
+    font-size: 1.5vh;
+}
+.Incident-baseInfoTitle{
+    font-weight: bold;
+    color: var(--text-color1);
+}
+button{
+    z-index: 2;
+}
+
+
+

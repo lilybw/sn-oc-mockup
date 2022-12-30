@@ -1,0 +1,11 @@
+.DropDownMenu{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color1);
+    border: 1px solid var(--text-color2);
+    border-radius: 1vh;
+    overflow: hidden;
+}
+.DropDownMenuOption{
+    color: red;
+}

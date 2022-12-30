@@ -1,0 +1,30 @@
+.IncidentCategory{
+    --incident-offset-x: 2vw;
+    display:flex;
+    flex-direction: column;
+    background-color: var(--category-color1);
+    border: 1px solid var(--border-color);
+    border-radius: 1vh;
+    padding: 1vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 1vh;
+    width: 98vw;
+    height: 100%;
+}
+.IncidentCategory[data-showhover='true']{
+    filter: drop-shadow(0 0 0.5vh var(--text-color1));
+}
+.IncidentCategory-title {
+    text-align: left;
+    font-size: 2vh;
+    padding: .5vh;
+}
+.IncidentCategory-incidents {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: right;
+    padding-left: var(--incident-offset-x);
+    width: calc(100vw - var(--incident-offset-x));
+}

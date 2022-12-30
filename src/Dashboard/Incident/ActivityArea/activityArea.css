@@ -1,0 +1,55 @@
+.ActivityArea{
+    --total-height: 100%;
+    --header-height: 0.13;
+    --body-height: 0.8;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color:transparent;
+    border-radius: 1vh;
+    border: 1px solid var(--border-color);
+    font-size: 1.5vh;
+}
+.ActivityArea-header{
+    height: calc(var(--total-height) * var(--header-height));
+    color: var(--text-color2);
+    background-color: transparent;
+}
+.ActivityArea-body{
+    height: calc(var(--total-height) * var(--body-height));
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 70%;
+    text-overflow: wrap;
+    word-wrap: break-word;
+    padding-right: 2vw;
+}
+.ActivityArea-UserInput{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ActivityArea-InputField{
+    position: relative;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.401), var(--background-color2));
+    border-radius: 1vh;
+    border: 1px solid var(--border-color);
+    width: 15vw;
+    height: 2vh;
+
+    z-index: 10;
+    transition: height 0.3s cubic-bezier(1, 0, 0, 1), width 0.3s cubic-bezier(1, 0, 0, 1) 0.3s;
+}
+.ActivityArea-InputField:focus{
+    border: 1px solid var(--border-color);
+    height: 5vh;
+    width: 28vw;
+    transition: width 0.3s cubic-bezier(1, 0, 0, 1), height 0.3s cubic-bezier(1, 0, 0, 1) 0.3s;
+}

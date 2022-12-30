@@ -1,0 +1,36 @@
+.Activity{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-overflow: wrap;
+    width: 100%;
+    height: 10vh;
+    font-size: 1.5vh;
+}
+.Activity-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 1vw;
+}
+.Activity-headerColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+.Activity-body{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    padding: 1vw;
+    text-overflow: wrap;
+    border-bottom: 2px solid var(--border-color);
+    border-radius: 1vw;
+}
