@@ -20,7 +20,7 @@
         "id": "unknown"
     },
     "assignedTo": {
-        "name": "Gustav Bundgaard Wanscher",
+        "name": "lily Bundgaard Wanscher",
         "id": "guwa",
         "email": "guwa@tv2.dk"
     },
@@ -30,7 +30,7 @@
     },
     "activities": [
         {
-            "author": "Gustav Bundgaard Wanscher",
+            "author": "lily Bundgaard Wanscher",
             "timestamp": "2022-01-01T12:00:00Z",
             "type": "Work notes",
             "content": "Worknote test 2"
@@ -42,7 +42,7 @@
             "content": "Activity update"
         },
         {
-            "author": "Gustav Bundgaard Wanscher",
+            "author": "lily Bundgaard Wanscher",
             "type": "Additional comments",
             "timestamp": "2022-01-01T12:00:00Z",
             "content": "Additional comment test 2"
@@ -60,7 +60,7 @@
             "content": "System bloat"
         },
         {
-            "author": "Gustav Bundgaard Wanscher",
+            "author": "lily Bundgaard Wanscher",
             "type": "Field changes",
             "timestamp": "2022-01-01T12:00:03Z",
             "content": "Activity update"
@@ -72,13 +72,13 @@
             "content": "Additional comment test 1"
         },
         {
-            "author": "Gustav Bundgaard Wanscher",
+            "author": "lily Bundgaard Wanscher",
             "type": "Work notes",
             "timestamp": "2022-01-01T12:00:05Z",
             "content": "Work note test 1"
         },
         {
-            "author": "Gustav Bundgaard Wanscher",
+            "author": "lily Bundgaard Wanscher",
             "timestamp": "2022-01-01T12:00:00Z",
             "type": "Work notes",
             "content": "Worknote test 2"
@@ -90,7 +90,7 @@
             "content": "Activity update"
         },
         {
-            "author": "Gustav Bundgaard Wanscher",
+            "author": "lily Bundgaard Wanscher",
             "type": "Additional comments",
             "timestamp": "2022-01-01T12:00:00Z",
             "content": "Additional comment test 2"
@@ -108,7 +108,7 @@
             "content": "System bloat"
         },
         {
-            "author": "Gustav Bundgaard Wanscher",
+            "author": "lily Bundgaard Wanscher",
             "type": "Field changes",
             "timestamp": "2022-01-01T12:00:03Z",
             "content": "Activity update"
@@ -120,7 +120,7 @@
             "content": "Additional comment test 1"
         },
         {
-            "author": "Gustav Bundgaard Wanscher",
+            "author": "lily Bundgaard Wanscher",
             "type": "Work notes",
             "timestamp": "2022-01-01T12:00:05Z",
             "content": "Work note test 1"
